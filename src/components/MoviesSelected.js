@@ -159,7 +159,7 @@ function ListMoviesSelected({ movieSelected, onHover, onMovieClicked }) {
                   <div>
                     <a
                       href={`mailto:?subject=Check out this movie&body=${encodeURIComponent(
-                        "Here is the link: " +
+                        "Here is the link to the movie :): " +
                           `https://www.imdb.com/title/${movie.imdbID}/`
                       )}`}
                       target="_blank"
@@ -171,7 +171,7 @@ function ListMoviesSelected({ movieSelected, onHover, onMovieClicked }) {
                   <div>
                     <a
                       href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
-                        "Check out this movie : " +
+                        "Check out this movie I go from : " +
                           `https://www.imdb.com/title/${movie.imdbID}/`
                       )}`}
                       target="_blank"
