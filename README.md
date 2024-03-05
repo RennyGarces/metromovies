@@ -1,4 +1,4 @@
-# MetroMovies (https://metromovies.vercel.app/)
+# MetroMovies 
 ![alt text](https://metromovies.vercel.app/static/media/metromovies.894edd868eaa8dda5fdd.png)
 
 
