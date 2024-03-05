@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { KEY_THREE } from "./data";
 export function NewsMovies() {
   const [movies, setMovies] = useState([]);
   useEffect(() => {
@@ -6,7 +7,7 @@ export function NewsMovies() {
     async function FecthData() {
       try {
         const resp = await fetch(
-          `https://newsapi.org/v2/everything?q=movies&pageSize=20&apiKey=${"c2fe3ee7ed0f4debac688f2d950777c1"}`,
+          `https://newsapi.org/v2/everything?q=movies&pageSize=20&apiKey=${KEY_THREE}`,
           { signal: controller.signal }
         );
         if (!resp.ok) {
