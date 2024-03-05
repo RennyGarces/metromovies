@@ -512,7 +512,7 @@ body::before {
   background-color: var(--color-primary-light);
 }
 .your-rating {
-  color: yellow;
+  color: rgb(240, 240, 64);
   font-size: 1.6rem;
 }
 .your-rating p {
