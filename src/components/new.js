@@ -7,12 +7,13 @@ export function NewsMovies() {
     async function FecthData() {
       try {
         const resp = await fetch(
-          `https://newsapi.org/v2/everything?q=movies&pageSize=20&apiKey=${KEY_THREE}`,
+          `https://gnews.io/api/v4/top-headlines?category=entertainment&lang=en&country=us&apikey=${KEY_THREE}`,
           { signal: controller.signal }
         );
         if (!resp.ok) {
           throw new Error("error in get News Movies");
         }
+
         const data = await resp.json();
         if (!data) {
           throw new Error("error in get News Movies");
@@ -23,7 +24,7 @@ export function NewsMovies() {
             title: el.title,
             description: el.description,
             url: el.url,
-            urlToImage: el.urlToImage,
+            urlToImage: el.image,
             id: i,
           };
         });
